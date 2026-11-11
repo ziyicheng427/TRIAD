@@ -1,0 +1,12 @@
+# TRIAD-Reg — KITTI training/evaluation (Sec. 5.2: AdamW, 50 epochs,
+# 00-05 / 06-07 / 08-10 splits).  Overrides RegConfig.
+dw_fps_beta: 1.0
+keypoint_counts: [768, 1024, 1280]
+num_levels: 3
+compatibility_sigma: 0.1
+num_seeds: 256
+propagation_iterations: 3
+epochs: 50
+train_overlap_thresh: 0.3
+rte_thresh_m: 2.0
+rre_thresh_deg: 5.0

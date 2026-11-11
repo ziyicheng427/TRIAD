@@ -1,0 +1,9 @@
+# TRIAD-Link — cross-layer interfaces (Sec. 3.5, Eq. 3).  Overrides LinkConfig.
+sigma_0: 0.03              # σ₀ = 3 cm
+hit_gain_clip_min: 0.25    # g_hit floor
+miss_gain_clip_min: 0.6    # g_miss floor
+l3_free_threshold: 0.2     # P < 0.2 → confidently free
+l3_free_weight: 0.1        # correspondence weight in free cells
+enable_l1: true
+enable_l2: true
+enable_l3: true

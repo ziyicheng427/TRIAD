@@ -1,0 +1,10 @@
+# TRIAD-Cal — indoor scenes (Sec. 3.2: 0.5 m voxels indoors).
+voxel_size: 0.5
+dihedral_min_deg: 30.0
+dihedral_max_deg: 150.0
+sam_grid: 16
+rgb_std_ratio: 0.7
+sam_edge_sigma_px: 1.2
+multi_frame_window: 5
+coverage_warn_threshold: 0.6
+coverage_inflation: 1.5

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triad-perception"
+version = "0.1.0"
+description = "TRIAD: consistency-guided LiDAR-camera calibration, point cloud registration, and dynamic occupancy mapping with cross-layer confidence propagation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ziyi Cheng" }, { name = "Yue Zhang" }]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+reg = [
+    "torch>=1.13",
+]
+sam = [
+    "segment-anything>=1.0",
+    "torch>=1.13",
+]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["triad*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

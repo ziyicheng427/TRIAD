@@ -1,0 +1,14 @@
+# Core (TRIAD-Cal, TRIAD-Map, TRIAD-Link, evaluation)
+numpy>=1.22
+scipy>=1.8
+pyyaml>=6.0
+
+# TRIAD-Reg (learned registration network)
+# torch>=1.13
+
+# SAM-derived image boundaries for TRIAD-Cal (optional; the pipeline also
+# accepts precomputed masks, see triad/cal/sam_adapter.py)
+# segment-anything>=1.0
+
+# Tests
+# pytest>=7.0
